@@ -125,6 +125,10 @@
 </head>
 <body>
 <!--     <center><img src="https://github.com/nttramy400/template_thymeleaf/blob/master/logo.png?raw=true" class="logo" /></center> -->
+<center><div class="logo">
+    <img src="${logo}" />
+    <div class="logo-title" th:text="${propertyName}">${propertyName}</div>
+</div></center>
 <h1>GUEST REGISTRATION FORM</h1>
 <div class="container">
     <div class="confirmation">Confirmation No. / <span class="sub">Mã đặt phòng</span>: <span class="no" th:text="${confirmationNumber}">${confirmationNumber}</span></div>
@@ -137,15 +141,15 @@
         </tr>
         <tr>
             <td class="label1">Nationality <div class="sub">Quốc tịch</div></td>
-            <td class="text1"><div th:text="${country}">${country}</div></td>
+            <td class="text1"><div th:text="${nationality}">${nationality}</div></td>
             <td class="label1">Departure Date <div class="sub">Ngày đi</div></td>
             <td class="text1"><div th:text="${departureDate}">${departureDate}</div></td>
         </tr>
         <tr>
             <td class="label1">ID Type <div class="sub">Loại thẻ</div></td>
-            <td class="text1"><div></div></td>
+            <td class="text1"><div th:text="${idCardType}">${idCardType}</div></td>
             <td class="label1">ETA <div class="sub">Giờ đến dự kiến</div></td>
-            <td class="text1"><div></div></td>
+            <td class="text1"><div th:text="${eta}">${eta}</div></td>
         </tr>
         <tr>
             <td class="label1">ID No. <div class="sub">Số thẻ</div></td>
